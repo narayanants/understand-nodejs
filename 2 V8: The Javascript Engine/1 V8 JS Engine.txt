@@ -1,0 +1,31 @@
+V8 JS Engine:
+=============
+
+Microprocessor - a tiny machine with very small parts.
+
+Instruction to the microprocessor to run a program
+
+Get those instructions in a lang it understands.
+
+IA-32
+X86-64
+ARM
+MIPS
+
+
+Machine Code:
+============
+
+	programmming langs spoken by comp processors.
+
+	Every program you run on your comp has be converted(compiled) into machine code.
+
+	Machine language
+	Assembly language
+	C/C++
+	Javascript
+
+	Node is written in c++
+
+	V8 JS engine is written c++
+

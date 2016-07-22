@@ -1,0 +1,20 @@
+API's and Endpoints:
+====================
+
+	API ( Application Programming Interface)
+	---
+
+	A set of tools for building a s/w app.
+
+	Other s/w made available to us to build s/w.
+
+	Application Programming Interface.
+
+	On the web. these tools are usually made avaiable via a set of URL's which accept and send data only via HTTP and TCP/IP.
+
+	Endpoint:
+	----------
+
+		A single URL in the web API.
+
+		Sometimes that Endpoint does multiple things based on HTTP Request headers.

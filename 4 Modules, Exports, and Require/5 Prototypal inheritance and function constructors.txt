@@ -1,0 +1,18 @@
+Prototypal inheritance and function constructors:
+==================================================
+
+	Inheritance:
+	===========
+
+	one object that gets access to properties and methods of other objects.
+
+	Function constructors:
+	=====================
+
+	Function used to construct objects.
+
+	this keywords point to a new empty object and add properties and methods to the new empty object.
+
+	we do this by using the new keyword.
+
+	function constructors automatically returns the object 

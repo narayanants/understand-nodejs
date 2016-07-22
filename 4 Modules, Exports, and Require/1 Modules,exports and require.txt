@@ -1,0 +1,14 @@
+Modules,exports and require:
+============================
+
+Module:
+
+	Reusable piece of code whose existence doesn't impact other code.
+
+	JS didn't have before.
+
+	CommonJS Modules:
+	=================
+
+	An agreed upon standard for how code modules should be structured.
+

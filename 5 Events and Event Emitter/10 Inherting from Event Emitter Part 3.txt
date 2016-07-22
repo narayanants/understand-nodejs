@@ -1,0 +1,7 @@
+Inherting from Event Emitter Part 3:
+====================================
+
+super() for getting super constructor's props and methods.
+
+extends for extending the props and methods of super constructor.
+

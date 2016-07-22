@@ -1,0 +1,15 @@
+Event Emitter:
+================
+
+Magic Strings:
+==============
+
+	A string that has special meaning in our code.
+
+	This is bad because it makes it easy for a typo to cause a bug and hard for tools to help us find it.
+
+	eventEmitter.on() - used to register listeners.
+
+	eventEmitter.emit() - used to trigger the event.
+
+	

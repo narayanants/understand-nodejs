@@ -1,0 +1,13 @@
+Restful API and JSON:
+---------------------
+
+
+REST:
+
+Architectural style for building API's
+
+Representational state Transfer.
+
+when we handle HTTP request , the HTTP verbs and url's mean something.
+
+

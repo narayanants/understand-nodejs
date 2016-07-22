@@ -1,0 +1,16 @@
+Outputting JSON
+----------------
+ 
+JSON.stringify() for converting JS object to JSON.
+
+JSON.parse() - convert JSON to JS object.
+
+
+Serialize:
+----------
+
+	Translating an object into a format that can be stored or transferred.
+
+	JSON,CSV,XML and others are popular.
+
+	Deserialize is the opposite(Converting the format back into an object).

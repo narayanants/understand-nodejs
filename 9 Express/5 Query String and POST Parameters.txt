@@ -1,0 +1,35 @@
+Query String and POST Parameters:
+=================================
+
+GET/?id=4&page=3 HTTP /1.1
+HOST:www.google.com
+Cookie:username=abc;name=Tony
+
+When the browser build the HTTP request, it sits inside the headers.
+
+Cookies are come along with the headers.
+
+
+POST Request:
+----------------
+
+	POST HTTP/1.1
+	Host:ww.google.com
+	Content-Type: application/json
+	Cookie: num=4;page=2
+
+	username=Tony&password=pwd
+
+
+	Query string moved into the body othe request.
+
+	{
+		"username":"narayanan",
+		"password":"pwd"
+	}
+
+
+	res.render('person',{ID:req.params.id,Qstr:req.query.qstr});
+
+
+	req.body

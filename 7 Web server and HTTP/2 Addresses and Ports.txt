@@ -1,0 +1,20 @@
+Addresses and Ports:
+===================
+
+Port:
+-----
+
+	Once a computer receives a packet, how it knows what program to send it to.
+
+	When a program is setup in a OS to receive packet from a particular port which is just a number.
+
+	Means the program is listening to that port.
+
+	Each web server has multiple Protocols running inside it. 
+
+	So we assign a port number which is unique in web server through which data is received.
+
+	78.132.160.4:443(IP:Port)
+	Socket Address
+
+	Domain name maps to a number and port.

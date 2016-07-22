@@ -1,0 +1,65 @@
+File System:
+============
+
+File system is used to handle file system in out local disk.
+
+
+Sync means synchronous approach to reading a file.
+
+synchronous approach to reading files.
+
+
+readFileSync means it  when line of code is run by JS engine, it will wait till the buffer is filled.
+
+It has the string back before the v8 engine can go on to next line of code.
+
+Many users waiting for file to be read.
+
+
+libuv asks the OS to do the work (such as fetching a file), when the OS is done with an event, places it in event loop and when it done, do a callback.
+
+
+JS code will keep running, event loop will keep checking. and when the file is done reading, now you can run the callback.
+
+
+when js code is done with other code, it will invoke this callback.
+
+When invoking the function, if error, calls the error or else it will be null.
+
+Error First Callback:
+====================
+
+callbacks that take an error object as their first parameter.
+
+null if no error occurs, otherwise will contain an object defining the error.
+
+This is a standard in what order to place our params for our callbacks.
+
+Error first callbacks for an async code.
+
+---------------------------------------
+what comes back by default is a buffer.
+---------------------------------------
+***************************************
+It gives a buffer full of binary data.
+***************************************
+convert it to a string using .toString()
+
+or specify the character encoding. ( UTF-8)
+
+Always use async approach rather than using synchronous approach.
+
+Buffer using to load file
+
+Buffer is just data sitting in memory called Heap in v8. spot where data sits.
+
+If Buffers starts to fill, it can take more memory. 
+
+
+
+
+
+
+
+
+

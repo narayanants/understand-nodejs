@@ -1,0 +1,66 @@
+Character Set, Binary data and Encoding:
+========================================
+
+
+Binary data: 
+-----------
+
+ data stored in binary format (0's and 1's)
+
+ The core of the math that computers are based on.
+
+ Each one or zero is called a 'bit' or binary digit.
+
+
+ 0101 => 2(pow 4) 2(pow 3) 2(pow 2) 2(pow 1)
+
+multiply it with 
+ 0 + 4 + 0 + 1
+
+Base 2 (binary representation)
+--------------------------------
+
+	Awesome for computers.
+
+Base 10 representation:
+-----------------------
+
+53 => 10(pow 1)  10 (pow 0) => 50 + 3 = 53
+
+
+Character set: (unicode)
+--------------
+
+Map a number to a character.
+
+Everything we store is numeric.
+
+Everything we store as a number.
+
+
+A representation of characters as number.
+
+Each character is assigned a number.
+
+Unicode character set.
+
+Number itself is stored in binary.
+
+
+Character Encoding: (UTF-8)
+===================
+
+Maps a number to its binary equivalent.
+
+How characters are stored in binary.
+
+The numbers( or code points) are converted and stored in binary.
+
+Character Encoding says how we store the number in binary.
+
+How many bits we use to represent each number.
+
+UTF-8 has 8 bits.
+
+ 
+

@@ -1,0 +1,11 @@
+Node, ES6 and Template Strings:
+================================
+
+ECMAScript 2015 or ES6
+
+New features for managing JS code easier.
+
+Latest version of node with v8 has support for ES6.
+
+jsconfig.json - tells VS code that this folder contains ES6 code.
+

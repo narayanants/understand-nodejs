@@ -1,0 +1,26 @@
+ES6 Classes:
+=============
+
+A new way to build Objects from syntax point of view
+
+Syntatic Sugar:
+
+	A feature thatonly changes how you type something, but nothing changes under the hood.
+
+	It's important to understand what is happening under the hood, so we don't make decision based on flawed assumptions.
+
+
+	class Person {
+		constructor(firstname,lastname){
+			this.firstname = firstname;
+			this.lastname = lastname;
+		}
+		greet(){
+			console.log('Hello' + this.firstname + ' ' + this.lastname);
+		}
+	}
+
+
+	class in other prog langs is completely different from ES6 JS classes.
+
+	new developer's doesn't know what is Prototype.

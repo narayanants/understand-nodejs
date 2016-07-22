@@ -1,0 +1,29 @@
+Semantic Versioning: (semver)
+===================
+
+Specifying what version a set of code is.
+
+so others can track if a new version has come out.
+This allows us to watch for new features, or to watch for 'breaking changes'.
+
+The word 'semantic' implies that something conveys meaning.
+
+
+Major.minor.patch
+ 1   .  7  .  2
+
+Major => Big Changes.
+Minor => Added new features.
+Patch => some bugs were fixed.
+
+Increment patch no if some bugs were fixed ( 1.7.3 )
+
+Your code will work fine.
+
+Increment a minor update ( 1.8.0 )
+
+Some new features added. Your code will work fine.
+
+Increment major update ( 2.0.0 )
+
+Your code will not work fine and it will break(maybe). Big Changes

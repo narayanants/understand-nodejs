@@ -1,0 +1,15 @@
+Module Patterns:
+================
+
+	module.exports.greet // reaching down module.exports to get the function.
+
+	whatever we put in module.exports will be cached and it will be returned!
+
+	Revealing module pattern:
+	=========================
+
+	exposing only the properties and methods you want via an returned object.
+
+	A very common and clean way to structure and protec code with modules.
+
+	return an object from a require will be cached and any other call to the require function will give you the same object.

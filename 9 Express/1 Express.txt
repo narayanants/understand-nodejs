@@ -1,0 +1,20 @@
+Express:
+--------
+
+Environment Variables:
+----------------------
+
+	Global variables specific to Environment(server) out code is living in.
+
+	Different servers can have different variable settings and we can access those values in code.
+
+
+HTTP Method:
+-----------
+
+	Type of action the request wishes to make.
+
+	GET,POST,PUT,DELETE and others. Also called verbs.
+
+
+	Have same URL for mutliple request.

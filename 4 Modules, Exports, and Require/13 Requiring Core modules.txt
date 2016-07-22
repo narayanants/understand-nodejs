@@ -1,0 +1,17 @@
+Requiring Core modules:
+========================
+
+loads the filename
+
+module is cached
+
+after that the require function checks whether the module is a native module?
+
+Native code is the Node.js JS core
+
+
+utilities is util.js
+
+No need for ./ for native modules.
+
+naming our custom module with same name with core module is not recommended.

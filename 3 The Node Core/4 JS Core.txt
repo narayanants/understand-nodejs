@@ -1,0 +1,8 @@
+JS Core:
+========
+
+ C++ utilites used by JS utilities 
+
+ lib/ folder contains JS libraries.
+
+ 

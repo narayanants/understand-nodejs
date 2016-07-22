@@ -1,0 +1,52 @@
+exports vs module.exports:
+=========================
+
+when our code is run on node, its run a s afunction expression
+
+	(function(exports,require,module,__filename,__dirname){
+		var greet = function(){
+			console.log('hi');
+		}
+
+		module.exports = greet;
+	});
+
+	fn(module.exports,require,module,filename,dirname);
+	return module.exports;
+
+	if we change module.exports inside a module it gets affected outside the module.
+
+
+shorthand:
+==========
+
+exports is the shorthand for module.exports.
+
+2 variables pointing to the same object all the time.
+
+then use exports alone?!?!
+============================
+
+require() return module.exports.
+
+exports that receive that value.
+
+exports doesn't work on all patterns of the above mentioned.
+
+
+	exports = function(){
+		console.log('gello');
+	}
+
+	console.log(exports); // function
+	console.log(module.exports); // object
+
+exports and module.exports initally point to the same object
+
+but when exports is set using =, then a new object is created in memory.
+
+Reference between module.exports and exports is broken.
+
+Mutate is changing something.
+
+just use module.exports // recommended

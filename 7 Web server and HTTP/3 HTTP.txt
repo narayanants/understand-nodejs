@@ -1,0 +1,35 @@
+HTTP:
+-----
+
+A set of rules or format for data that is being transferred on the web.
+
+Hypertext Transfer protocol.
+
+It's a format (of various) defining data being transferred via TCP/IP.
+
+Client-server model is based on HTTP Format.
+
+
+Request from a server: (HEADERS)
+======================
+	CONNECT: www.google.com:443 HTTP/1.1
+	Host:www.google.com
+	Connection:keep-alive.
+
+Response from server:
+=======================
+HTTP/1.1 200 OK ( STATUS ) 
+Content-Length:44 ( HEADERS - name value pairs separated by colons )
+Content-Type:text/html (MIME TYPE)
+
+<html><head></head></html> ( BODY )
+
+MIME TYPE:
+----------
+
+A standard for specify the type of data being sent.
+
+Multipurpose internet mail extensions.
+Examples: application/json, text/html, image/jpeg
+
+

@@ -1,0 +1,7 @@
+MEAN STACK:
+-----------
+
+* A stack is a combination of all technologies used to build a piece of software.
+* Your DB system,your server side code, your client side code, and everything else.
+
+

@@ -1,0 +1,50 @@
+libuv, Event loop and non-block Async code:
+=========================================
+
+
+System events inside c++ core are handled by c library called libuv embedded inside node.
+
+Managing events coming from OS closer to machine.
+
+
+
+v8 => one line of code at a time.
+
+libuv => specifically deal with events occuring in OS.
+
+
+libuv connects with requesting something from (open a file/ download something) ====> OS 
+
+libuv has a queue of events:
+
+Most important part of libuv is the Event loop.
+
+happening when v8 is running.
+
+OS does an event and is placed in the event queue in libuv
+
+During event loop, libuv checks the queue, and OS may put more than one event.
+
+When checking event loop, libuv sees something is complete, processes it and it runs a callback to v8.
+
+callback will involve JS code running as a response, because v8 is synchronous.
+
+Entire process is Asynchronous.
+
+
+Event Driven non-blocking I/O in JS.
+
+
+Non Blocking:
+=============
+
+Doing other things without stopping your code from running.
+
+This is made by possible by Node's doing things Asynchronously.
+
+Event Emitter also lets us to run our own code. Events coming from libuv also related to events in JS causing events in JS side cause a JS event so we can add own function to handle that event.
+
+
+
+
+

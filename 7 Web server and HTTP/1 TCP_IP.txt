@@ -1,0 +1,41 @@
+TCP/IP:
+-------
+
+Protocol:
+--------
+
+	A set of rules two sides agree on to use when communicating.
+
+	Both client and server are programmed to understand and use the particular set of rules.
+
+	It's similar to two people from different countries agreeing on a language to speak in.
+
+Client-server model:
+--------------------
+
+Client asks for services and server performs some services.
+
+How the client and the server identify each other.
+
+Client makes a request and response is given by the server
+
+Both are done in a same format called 'HTTP'.
+
+Client and server's have an IP address.
+
+IP will be the identifier.
+
+Computer opens a socket through which data flow bi-directionally.
+
+
+Some sample protocols are HTTP(web),FTP(files),SMTP(emails).
+
+The way in which the data is sent is called TCP(Transmission Control Protocol).
+
+TCP tells the computer to split the data into pieces and those individual pieces are called 'Packets'
+
+TCP is similar to a Stream.
+
+Web socket is to keep the socket open.
+
+

@@ -1,0 +1,11 @@
+Callbacks:
+=========
+
+A function passed to another function, to be run when the other function is finished.
+
+The function calls back invoking the function the function you give it when its done doing its work.
+
+
+Main code => Other code to run => Main code will invoke the other code.
+
+

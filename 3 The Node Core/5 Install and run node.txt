@@ -1,0 +1,23 @@
+Install and run nodejs:
+=========================
+
+node -v
+
+
+	versions of node.js
+	===================
+
+	v8 updated by google.
+
+	Nodejs - developed by Joyent.
+
+	io.js - node.js to be built and updated faster split their own version and called io
+
+	Node.js and io.js were merged in 4.0 version.
+
+
+	Download and install Visual Studio code.
+
+	Breakpoint : A spot in our code where we tell the debugging tool  to pause the execution of our code.
+
+	so we can figure out what's going on.

@@ -1,0 +1,30 @@
+Lets build a module:
+====================
+
+greet.js is independent from other files and code and can be reused.
+
+require() is function and the param is a string
+
+string contains the name/location of the module you wish to use/import in this file.
+
+I NEED THIS
+I REQUIRE THIS
+
+Path:
+======
+
+	./ => means the same location/folder level 
+
+	code in greet.js is protected and is not available to the app.js
+
+	greet() function available to app.js
+
+	make it available globally we use module.exports
+
+	I choose what becomes available outside of my module for use.
+
+	Now this module is exposing the greet function.
+
+	module is just a JS file.
+
+	

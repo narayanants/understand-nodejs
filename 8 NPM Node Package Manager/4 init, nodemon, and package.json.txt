@@ -1,0 +1,16 @@
+init, nodemon, and package.json:
+--------------------------------
+
+Download the moment packge from npm registry 
+
+npm install moment --save
+
+--save notes what we are using in our app inside package.json file.
+
+^ (caret) means its ok to automatically update the version of the package.
+
+^ means update for minor and patch updates but not for major updates.
+
+~ means update only for patch releases.
+
+First it looks in the node core. If not found then checks at node_modules.

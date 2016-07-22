@@ -1,0 +1,7 @@
+Templates and Template Engines:
+--------------------------------
+
+Different Template Engines such as jade, ejs
+
+
+app.set('view engine','ejs');

@@ -1,0 +1,21 @@
+Command Line Interface: (CLI)
+========================
+
+	A utility to type commands into to your computer rather than clicking around.
+
+	Bash on linux.
+	Terminal on Mac.
+	Command prompt on windows.
+	and other replacements.
+
+
+	Arguments:
+	==========
+
+		values you give your program that affects how it runs.
+
+		Essentially passing parameters to a function.
+
+		dir /w => param,value,argument.
+
+	

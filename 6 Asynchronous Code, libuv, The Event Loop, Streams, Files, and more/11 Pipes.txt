@@ -1,0 +1,30 @@
+Pipes:
+======
+
+	Connect two streams by writing to one stream what is being read from another.
+
+	In Node, you pipe from a Readable stream to a writeable stream.
+
+	Read a chunk and pipe it to a writeable stream.
+
+	if the writeable stream is also Readable then we can pipe to another writeable stream.
+
+	Pipes can be chained or connected.
+
+	Sending data from Readable to writeable stream as each chunk is processed is common.
+
+	Pipe is avaiable on readable stream.
+
+	Readable stream can be piped only to a writeable stream.
+
+	zlib => part of node core. used to produce Gzip files.
+
+Method Chaining:
+================
+
+A method returns an object 	so that we can keep calling methods.
+
+sometimes it returns the parent object (called 'cascading/chaining') and sometimes other objects.
+
+Always use stream and async approach in node.js
+

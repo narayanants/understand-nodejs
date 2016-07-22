@@ -1,0 +1,16 @@
+What Does Javascript Need to Manage a Server:
+=============================================
+
+	Better ways to organize code into Reusable code.
+
+	ES6 has features to organize code.
+
+	Ways to deal with files.
+
+	ways to deal with databases.
+
+	The ability to communicate over the internet.
+
+	Ability to accept request and send response in a standard format()
+
+	A way to deal with work that takes a long time.

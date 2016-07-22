@@ -1,0 +1,42 @@
+Buffers:
+=========
+
+
+Temporary holding spot where we hold data moving from one place to another.
+
+Buffer stores raw binary data. (0 and 1's).
+
+Convert between buffers and string.
+
+store strings as binary data in a buffer using binary encoding.
+
+Default character encoding is UTF8.
+
+most times buffers are something that's coming back from somether utility or object.
+
+
+
+
+Stream:
+=======
+
+Sequence of data made availabe over time.
+
+Pieces of data that combine into a whole.
+
+
+Data comes through the stream and that is held in buffer for sometime and is send out for processing.
+
+
+
+
+
+var buf = new Buffer('Hello','utf8');
+console.log(buf);
+console.log(buf.toString());
+console.log(buf.toJSON());
+
+console.log(buf[2]);
+
+buf.write('wrodl');
+console.log(buf.toString());

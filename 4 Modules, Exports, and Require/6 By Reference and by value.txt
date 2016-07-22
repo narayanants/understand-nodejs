@@ -1,0 +1,16 @@
+By Reference and by value:
+===========================
+
+Primitive:
+==========
+
+	type of data that represents a single value.
+
+	a points to a location in memory in computer
+
+	by value creates a copy and changes to one doesn't affect other.
+
+	by Reference doesn't create a copy and changes to one affects the other.
+
+	
+

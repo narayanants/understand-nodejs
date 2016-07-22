@@ -1,0 +1,59 @@
+Events and Event Emiitter:
+==========================
+
+Event:
+======
+
+Something that has happened in our app that we can respond to.
+
+In node.js, there are 2 types of events.
+
+
+2 types of events:
+==================
+
+	
+	System  Events 
+	==============
+
+	handled by libuv.
+
+	
+
+	(C++ side of the node.js) libuv.
+
+	events coming from computer such as I have received the file etc.
+
+
+	I have received data from internet.
+
+
+	library thats part of node.js that comes from computer system.
+
+
+	Custom Events:
+	==============
+
+		Inside JS Core.
+
+		Events that the user can create for himself.
+
+		Event Emitter contains the code for what's called Event Emitter.
+
+		Event Emitter in code is where we have custom code.
+
+
+
+		libuv sends event that happen inside the comp system.
+
+		When a event occurs in libuv, it generates a custom event in JS to make it easier for us to manage our code.
+
+		JS side is faking it.
+
+
+
+
+
+
+
+

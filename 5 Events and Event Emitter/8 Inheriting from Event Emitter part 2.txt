@@ -1,0 +1,8 @@
+Inheriting from Event Emitter part 2:
+===================================
+
+
+	What if EventEmiiter directly adds props and methods to the new Object instead of the prototype of the function 
+	constructor.
+
+	

@@ -1,0 +1,18 @@
+Adding features of JS:
+======================
+
+* JS code => V8 engine => Machine code
+* Embed v8 into my own c++ program.
+
+Embedding v8 into its program and add some featurs into JS.
+
+Write code and give it to v8 and converts it into machine code and gives out the output.
+
+
+shell --print_code
+
+
+v8/build/Debug/shell
+
+
+NodeJS is a C++ program with v8 embedded/added in it.

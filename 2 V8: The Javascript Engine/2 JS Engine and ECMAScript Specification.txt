@@ -1,0 +1,14 @@
+JS Engine and ECMAScript Specification:
+======================================
+
+Standard JS is based on.
+
+Needed a standard since there are many engines.
+
+
+JS Engine:
+==========
+
+	A program that converts JS code and converts it into something the comp understands.
+
+	And it should follow the ECMAScript standard on how the language should work and what features it should have.

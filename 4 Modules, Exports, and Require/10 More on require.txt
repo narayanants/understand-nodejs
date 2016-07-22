@@ -1,0 +1,8 @@
+More on require:
+===============
+
+ooks for greet.js 
+if not found..looks for greet folder with index.js
+
+require() on index.js and from there module.exports to the require on app.js
+

@@ -1,0 +1,20 @@
+ES6 Typed Arrays:
+=================
+
+	Latest version of JS and ES6.
+
+	JS doesn't good ways to deal with binary data.
+
+	Buffers deal with binary data in Node.js
+
+	
+
+	var buffer = new ArrayBuffer(8);
+	var view = new Int32Array(buffer);
+
+	view[0] = 5;
+	view[1] = 10;
+	view[2] = 20;
+
+
+	console.log(view); // shows only 5 and 10

@@ -1,0 +1,11 @@
+Inherting from the event emitter:
+===================================
+
+
+	Let's assume we have obj2 with prop1 and prop2
+
+	Then we have Obj1 which should have access to obj2's prop1 and prop2
+
+	What node's inherits function does using function constructor and object.create.
+	
+	Those 2 objs are linked using Prototype.

@@ -1,0 +1,17 @@
+Modules and ES6:
+===============
+
+New syntax in ECMAScript 2016
+
+//greet.js
+export function(){
+	console.log('hello');
+}
+
+//app.js
+import * as greetr from 'greet';
+greetr.greet();
+
+
+v8 JS engine itself is supporting this concept not the addon feature of nodeJS.
+

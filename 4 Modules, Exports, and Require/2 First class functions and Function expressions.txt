@@ -1,0 +1,18 @@
+First class functions and function expressions:
+===============================================
+
+First class functions:
+=====================
+
+	Everything you can do with other types you can do with functions.
+
+	you can use functions like strings,numbers etc.
+
+	Functions in JS are first class.
+
+Function Expressions:
+======================
+
+	Block of code that results in a value.
+
+	Function Expressions are possible in JS because functions are first class.

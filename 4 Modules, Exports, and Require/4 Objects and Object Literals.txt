@@ -1,0 +1,35 @@
+Objects and Object Literals:
+============================
+
+name/value pair:
+
+	a name which maps to  a value.
+
+	The name may be fdefined more than once, but only can have one value in any given context.
+
+	That value may be name/value pairs.
+
+	Address = '11 main street'
+
+	Object:
+	========
+
+	A collection of name/value pairs
+
+	Object => poins to other values in a particular address.
+
+		primitive property
+
+		Object property
+
+		Function method
+
+	Object Literal:
+	===============
+
+	name/value pairs separated by commas, and surround them by curly braces.
+
+	shorthand way to create JS objects in code.
+
+	
+

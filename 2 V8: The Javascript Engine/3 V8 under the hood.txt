@@ -1,0 +1,9 @@
+V8 under the hood:
+===================
+
+	V8 is open sourced by google.
+
+	Download the source from google and check its source code.
+
+	Uses lots of c++ features and headers to compile our JS code into processor understandable code.
+	

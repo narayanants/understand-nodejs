@@ -1,0 +1,4 @@
+Streams and Performance:
+------------------------
+
+ Always use streams wherever possible and use async approach in node.js

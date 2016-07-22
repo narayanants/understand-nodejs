@@ -1,0 +1,34 @@
+Node Core:
+==========
+
+Servers and clients:
+====================
+
+	Nodejs is a server technology.
+
+	Server is a computer performs services.
+
+	Clients asks for services.
+
+	Client => Requests => Server => Response => Client
+
+	both Requests and Response are in standard format.
+
+
+	Browser => Web server ( Requests/ Response)
+
+	============================================
+	Standard format in the internet is the HTTP.
+	============================================
+
+	Each browser has its own engine..
+
+	Google chrome(Javascript) is a c++ program that embeds v8.
+
+
+	Goal of NodeJS is instead to write JS in the web server.
+
+	
+
+
+

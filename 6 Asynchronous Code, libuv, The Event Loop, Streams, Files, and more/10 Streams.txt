@@ -1,0 +1,111 @@
+Streams:
+========
+
+	Streams are just a sequence of pieces of data
+
+	pieces broken into chunks.
+
+
+Chunks:
+-------
+
+ 	A piece of data being sent over stream.
+
+ Stream.js file
+
+ Readable stream - read data that's coming through the stream
+ Writeable stream - send data to the stream
+ Duplex Stream - both Read and write
+ Transform Stream - change the data as it moves through stream.
+ PassThrough Stream
+
+-----------------------------
+ Streams are Event Emitters.
+ All streams are instances of EventEmitter.
+-----------------------------
+
+
+Readable:
+=========
+
+	Data comes out of a Readable stream.
+
+	Readable stream will not start emitting data until you explicitly tell that you are ready to receive it.
+
+	Two modes:
+	----------
+
+		Flowing mode - fetch data and give it 2 your program as fast as possible.
+		Paused mode - To fetch data explicitly call stream.read() to get chunks of data out.
+		Paused mode is default in streams.
+
+		Switching to Flowing mode:
+		-------------------------
+			Add a 'data' event handler.
+			Call a stream.resume() to open flow.
+			call stream.pipe() to send data to a Writeable.
+
+		Switching to Paused mode:
+		---------------------------
+		If there are no pipe destinations, then use stream.pause()
+		If there are pipe destinations, then remove all data event handlers and remove all pipe destinations by calling stream.unpipe() method.
+
+	For backwards compatibility reasons, removing 'data' will not automatically pause the stream.
+	If there are piped destinations, then calling stream.pause() will not guarentee stream is not paused.
+
+
+
+
+
+Abstract Class:
+===============
+
+A type of constructor you never work directly with, but inherit from.
+
+We create new objects which inherit from Abstract Base class.
+
+
+Readable and writeable streams:
+==============================
+
+
+EventEmitter.prototype => Stream.prototype => Stream.Readable.prototype => ReadStream.prototype
+
+Node's Perspective:
+===================
+
+* Browser's request is taken as readable
+* Server's response is taken as writeable.
+
+
+fs.createReadStream = function(path,options){
+	
+}
+
+createReadStream => Readable => Stream => Event Emitter.
+
+
+createReadStream:
+================
+
+fs.createReadStream(__dirname + '/greet.txt',{
+	encoding:'utf8',
+	highWaterMark: 16 * 1024 // No of chunks distributed in kiloBytes.
+});
+
+readable.on('data',function(data){
+	console.log(data.length);
+});
+
+highWaterMark 
+--------------
+
+tells us how much the buffer size should be.
+
+How much each chunk to be.
+
+
+
+
+
+

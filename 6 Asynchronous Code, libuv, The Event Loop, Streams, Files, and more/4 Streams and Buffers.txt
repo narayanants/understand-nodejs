@@ -1,0 +1,32 @@
+Streams and Buffers:
+====================
+
+
+Buffers: 
+========
+
+	Temporary holding spot of data being moved from one place to another.
+
+	Intentionally limited in size.
+
+	Gathering data and putting in a Temporary spot to be processed as it comes.
+	
+
+Stream:
+=======
+
+	A sequence of data made available over time.
+
+	Pieces of data eventually combine into a whole.
+
+	Imagine something similar to a river where water flows down it.
+
+
+	data is flowing down stream.
+
+	data being passed from one comp to another.
+
+	Movie streaming is done as its downloading as it comes.
+
+	Watching the video as it is being downloaded.
+

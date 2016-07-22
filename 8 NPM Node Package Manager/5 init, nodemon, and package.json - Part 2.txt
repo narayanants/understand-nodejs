@@ -1,0 +1,14 @@
+init, nodemon, and package.json - Part 2
+-----------------------------------------
+
+development Dependencies:
+-------------------------
+
+npm install jasmine-node --save-dev
+
+--save-dev => Added to devDependencies
+
+it is noted in devdependencies.
+
+npm install -g moment => Globally install the package.
+

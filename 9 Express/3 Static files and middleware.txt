@@ -1,0 +1,17 @@
+Static files and middleware:
+-------------------------------
+
+Middleware:
+------------
+
+	Code  that sits between two layers of s/w.
+
+	In the case of express, sitting between request and response.
+
+
+Static: 
+--------
+
+* Not Dynamic. 
+* Files that are not processed in any way.
+* For ex: HTML,CSS, and image files are 'static' files.

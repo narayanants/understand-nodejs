@@ -1,0 +1,10 @@
+Object Properties, First class functions and arrays:
+====================================================
+
+Listener:
+
+	Code that responds to Events.
+
+	In JS, listener will be a function.
+
+	

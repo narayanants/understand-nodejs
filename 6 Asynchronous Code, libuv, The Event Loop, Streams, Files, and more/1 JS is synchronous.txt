@@ -1,0 +1,15 @@
+JS is synchronous:
+===================
+
+Asynchronous : More than one process running simultaneously.
+
+Node does things Asynchronous. v8 doesn't
+
+
+synchronous: one process executing at a time
+
+JS is synchronous. Think of it as only one line of code executing  at a time.
+
+NodeJS is Asynchronous.
+
+v8 is synchronous.

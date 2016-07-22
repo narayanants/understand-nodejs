@@ -1,0 +1,555 @@
+Machine language: language understood by the microprocessor.
+
+Node is written in c++
+
+V8 JS engine is written c++.
+
+Standard JS is based on.
+
+Needed a standard since there are many engines.
+
+V8 is open sourced by google used in the Google chrome browser.
+
+Write code and give it to v8 and converts it into machine code and gives out the output.
+
+
+shell --print_code
+
+v8/build/Debug/shell
+
+NodeJS is a C++ program with v8 embedded/added in it.
+
+Nodejs is a server technology.
+
+Server is a computer performs services.
+
+Clients asks for services.
+
+Client => Requests => Server => Response => Client
+
+
+NodeJS solves some of the following:
+=====================================
+Better ways to organize code into Reusable code.
+
+Ability to accept request and send response in a standard format.
+
+ways to deal with files and databases.
+
+way to deal with work that takes a long time.
+
+Modules,exports and require:
+=============================
+
+Module: a reusable piece of code whose existence doesn't impact other code.
+
+JS doesn't have this before.
+
+CommonJS modules: a standard that code modules must follow.
+
+require() is function and the param is a string I NEED THIS  I REQUIRE THIS
+
+code in greet.js is protected and is not available to the app.js
+
+module.exports makes it globally avaialbe for use in other files.
+
+Primitive: type of data that represents a single value.
+
+
+
+Events and Event Emitter:
+========================
+
+Code that responds to an event.
+
+In JS, a listener will be a function.
+
+Magic Strings: A string that has special meaning in our code.
+
+eventEmitter.on() - used to register listeners.
+
+eventEmitter.emit() - used to trigger the event.
+
+Template Literals => way to concatenate string in ES6 JS
+
+Easier to work with better than '+'
+
+Latest version of node with v8 has support for ES6.
+
+jsconfig.json - tells Visual studio code that this folder contains ES6 code.
+
+super() for getting super constructor's props and methods.
+
+extends for extending the props and methods of super constructor.
+
+
+6 Asynchronous Code, libuv, The Event Loop, Streams, Files, and more
+====================================================================
+
+Asynchronous : More than one process running simultaneously.
+
+Node does things Asynchronous. v8 doesn't
+
+Js is synchronous. Think of it as only one line of code executing  at a time.
+
+v8 is synchronous.
+
+NodeJS is Asynchronous.
+
+libuv, Event loop and non-block Async code:
+-------------------------------------------
+
+System events inside c++ core are handled by c library called "libuv" embedded inside node.
+
+
+Managing events coming from OS closer to machine.
+
+
+
+v8 => one line of code at a time. synchronous
+
+libuv => specifically deal with events occuring in OS.
+
+
+libuv connects with requesting something from (open a file/ download something) ====> OS 
+
+libuv has a queue of events:
+----------------------------
+
+Most important part of libuv is the "Event loop".
+
+happening when v8 is running.
+
+OS does an event and is placed in the event queue in libuv
+
+During event loop, libuv checks the queue, and OS may put more than one event.
+
+When checking event loop, libuv sees something is complete, processes it and it runs a callback to v8.
+
+callback will involve JS code running as a response, because v8 is synchronous.
+
+Entire process is Asynchronous.
+
+
+Event Driven non-blocking I/O in JS.
+
+
+Non Blocking:
+=============
+
+Doing toher things without stopping your code from running.
+
+This is made by possible by Node's doing things async.
+
+
+File System: 
+============
+
+File system is used by Node.js to deal with files.
+
+Sync means synchronous approach way to deal with files.
+
+readFileSync means read the file in synchronous approach and wait till the buffer is filled  to the fullest capacity.
+
+It has the string back before the v8 engine can go on to next line of code.
+
+Many users waiting for file to be read.
+
+C++ code do you thing using livuv
+
+
+libuv asks the OS to do the work (such as fetching a file), when the OS is done with an event, places it in event loop and when it done, do a callback.
+
+
+JS code will keep running, event loop will keep checking. and when the file is done reading, now you can run the callback.
+
+
+when js code is done with other code, it will invoke this callback.
+
+When invoking the function, if error, calls the error or else it will be null.
+
+Error First Callback:
+====================
+
+callbacks that take an error object as their first parameter.
+
+null if no error occurs, otherwise will contain an object defining the error.
+
+This is a standard in what order to place our params for our callbacks.
+
+Error first callbacks for an async code.
+
+what comes back by default is a buffer.
+
+It gives a buffer full of binary data.
+
+Streams:
+=========
+
+Streams are sequence of pieces of data.
+
+pieces are broken into chunks.
+
+Chunks:
+=======
+
+**********************************
+A piece of data sent over stream.
+**********************************
+
+Readable,writeable,Duplex,
+
+--------------------------
+Streams are Event Emitters.
+---------------------------
+
+createReadStream
+createWriteStream
+
+
+Pipes:
+======
+
+	Connect two streams by writing to one stream what is being read from another.
+
+	In Node, you pipe from a Readable stream to a writeable stream.
+
+	Read a chunk and pipe it to a writeable stream.
+
+	if the writeable stream is also Readable then we can pipe to another writeable stream.
+
+	Pipes can be chained or connected.
+
+	Sending data from Readable to writeable stream as each chunk is processed is common.
+
+	Pipe is avaiable on readable stream.
+
+	Readable stream can be piped only to a writeable stream.
+
+	zlib => part of node core. used to produce Gzip files.
+
+Method Chaining:
+================
+
+A method returns an object 	so that we can keep calling methods.
+
+sometimes it returns the parent object (called 'cascading/chaining') and sometimes other objects.
+
+Always use stream and async approach in node.js
+
+HTTP and being a web server:
+----------------------------
+
+A set of rules where two sides agree on when to use when communicating.
+Both client and server are programmed  to understand  and use the particular set of rules.
+It's similar to two people from different countries agreeing on a language to speak in.
+
+Addresses and Ports:
+===================
+
+Port:
+-----
+
+	Once a computer receives a packet, how it knows what program to send it to.
+	When a program is setup in a OS to receive packet from a particular port which is just a number.
+	Means the program is listening to that port.
+	Each web server has multiple Protocols running inside it. 
+	So we assign a port number which is unique in web server through which data is received.
+	78.132.160.4:443(IP:Port) [Socket Address]
+	Domain name maps to a number and port.
+
+HTTP:
+-----
+
+	* A set of rules or format of data that is being sent/ transferred on the web.
+	* Client-Server model is based on HTTP format.
+
+
+	Request to a server:
+	--------------------
+
+	Connect: www.google.com:443 HTTP /1.1
+	Host:www.google.com
+	Connection: keep-alive. 
+
+	Response from a server:
+	-----------------------
+
+	HTTP / 1.1  200 OK => STATUS
+	Content-Length:44 (HEADERS) ( MIME TYPE)
+	Content-Type : text/html
+
+	<html><head></head><body></body></html>
+
+
+	MIME TYPE( Multipurpose Internet Mail Extensions)
+
+	A standard for specifying the type of data being sent.
+
+	application/json text/html image/jpeg.
+
+
+	Http Parser:
+	------------
+
+		How we build HTTP request and responses and parse them. ( break them into pieces and use them)
+
+		We are talking about formatting.
+
+		Http parser is a c program embedded in node
+
+		Parses responses and requests.
+
+	Creating a Http Server:
+	-----------------------
+
+	var http = require('http');
+	var fs = require('fs');
+	http.createServer(function(req,res){
+
+		res.writeHead(200,{'Content-Type':'text/plain'});
+		fs.createReadStream(__dirname + '/index.html','utf8').pipe(res);
+
+	}).listen(1337,'127.0.0.1');
+
+
+API's and Endpoints:
+====================
+
+	API ( Application Programming Interface)
+	---
+
+	A set of tools for building a s/w app.
+
+	Other s/w made available to us to build s/w.
+
+	Application Programming Interface.
+
+	On the web. these tools are usually made avaiable via a set of URL's which accept and send data only via HTTP and TCP/IP.
+
+	Endpoint:
+	----------
+
+		A single URL in the web API.
+
+		Sometimes that Endpoint does multiple things based on HTTP Request headers.
+
+Outputting JSON
+----------------
+ 
+JSON.stringify() for converting JS object to JSON.
+
+JSON.parse() - convert JSON to JS object.
+
+
+Serialize:
+----------
+
+	Translating an JS object into a format that can be stored or transferred.
+
+	JSON,CSV,XML and others are popular.
+
+	Deserialize is the opposite(Converting the format back into an object).
+
+Routing:
+-------
+
+ Mapping HTTP Requests to content.
+
+
+ Whether actual files exist on the server or not.
+
+ use conditional statements to do with routing.
+
+
+
+ Packages and Package Managers:
+------------------------------
+
+	Package:
+	--------
+		Collection of code
+
+		managed and maintained with a package management system.
+
+	package management system:
+	-------------------------
+
+	s/w that automates installing and updating packages.
+
+	Deals with version you have or need, and manages dependenices.
+
+
+Dependenices:
+-------------
+
+	Code that another set of code relies on to function.
+
+	That package might have other dependenices.
+
+	If you use that code in your app, it is a dependency.
+	Your app depends on it.
+
+Semantic Versioning: (semver)
+===================
+
+Specifying what version a set of code is.
+
+so others can track if a new version has come out.
+This allows us to watch for new features, or to watch for 'breaking changes'.
+
+The word 'semantic' implies that something conveys meaning.
+
+
+Major.minor.patch
+1    .  7  .  2
+
+Major => Big Changes.
+Minor => Added new features.
+Patch => some bugs were fixed.
+
+Increment patch no if some bugs were fixed ( 1.7.3 )
+
+Your code will work fine.
+
+Increment a minor update ( 1.8.0 )
+
+Some new features added. Your code will work fine.
+
+Increment major update ( 2.0.0 )
+
+Your code will not work fine and it will break(maybe). Big Changes
+
+
+init, nodemon, and package.json: (Part 1)
+--------------------------------
+
+Download the moment packge from npm registry 
+
+npm install moment --save
+
+*********************************************************************
+--save notes what we are using in our app inside package.json file.
+
+^ (caret) means its ok to automatically update the version of the package.
+
+^ means update for minor and patch updates but not for major updates.
+
+~ means update only for patch releases.
+*********************************************************************
+
+init, nodemon, and package.json - Part 2
+-----------------------------------------
+
+development Dependencies:
+-------------------------
+
+npm install jasmine-node --save-dev
+
+*********************************************************************
+ --save-dev => it is noted in devdependencies.
+*********************************************************************
+
+npm install -g moment => Globally install the package.
+
+
+Express:
+--------
+
+Environment Variables:
+----------------------
+
+	Global variables specific to Environment(server) out code is living in.
+
+	Different servers can have different variable settings and we can access those values in code.
+
+
+HTTP Method:
+-----------
+
+	Type of action the request wishes to make.
+
+	GET,POST,PUT,DELETE and others. Also called verbs.
+
+
+	Have same URL for mutliple request.
+
+Static files and middleware:
+-------------------------------
+
+Middleware:
+------------
+
+	Code  that sits between two layers of s/w.
+
+	In the case of express, sitting between request and response.
+
+
+Static: 
+--------
+
+* Not Dynamic. 
+* Files that are not processed in any way.
+* For ex: HTML,CSS, and image files are 'static' files.
+
+
+Query String and POST Parameters:
+=================================
+
+GET/?id=4&page=3 HTTP /1.1
+HOST:www.google.com
+Cookie:username=abc;name=Tony
+
+When the browser build the HTTP request, it sits inside the headers.
+
+Cookies are come along with the headers.
+
+
+POST Request:
+----------------
+
+	POST HTTP/1.1
+	Host:ww.google.com
+	Content-Type: application/json
+	Cookie: num=4;page=2
+
+	username=Tony&password=pwd
+
+
+	Query string moved into the body othe request.
+
+	{
+		"username":"narayanan",
+		"password":"pwd"
+	}
+
+
+	res.render('person',{ID:req.params.id,Qstr:req.query.qstr});
+
+	console.log(req.query.firstname); => Get Requests
+	console.log(req.body.firstname); => POST Requests
+
+Restful API and JSON:
+---------------------
+
+REST:
+
+Architectural style for building API's
+
+Representational state Transfer.
+
+when we handle HTTP request , the HTTP verbs and url's mean something.
+
+
+MEAN STACK:
+----------
+
+
+
+
+
+
+
+
+
+

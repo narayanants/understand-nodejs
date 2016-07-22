@@ -1,0 +1,28 @@
+Packages and Package Managers:
+------------------------------
+
+	Package:
+	--------
+	
+		Collection of code
+
+		managed and maintained with a package management system.
+
+	package management system:
+	-------------------------
+
+	s/w that automates installing and updating packages.
+
+	Deals with version you have or need, and manages dependenices.
+
+
+Dependenices:
+-------------
+
+	Code that another set of code relies on to function.
+
+	That package might have other dependenices.
+
+	If you use that code in your app, it is a dependency.
+	Your app depends on it.
+

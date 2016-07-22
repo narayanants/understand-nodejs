@@ -1,0 +1,12 @@
+NPM Registry : using other poeple's code
+========================================
+
+NPM Registry: packages 
+
+NPM Program : actual program installed in the computer.
+
+npm comes with node.js
+
+code that we download into our comp comes from npm registry.
+
+npm registry is www.npmjs.com

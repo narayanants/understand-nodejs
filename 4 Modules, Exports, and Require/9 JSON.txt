@@ -1,0 +1,13 @@
+JSON:
+====
+
+	Javascript Object Notation:
+	==========================
+
+		a standard for structuring data that is inspired by JS object literals.
+
+		JS engines are built to understand.
+
+		names in quotes is a must.
+
+		

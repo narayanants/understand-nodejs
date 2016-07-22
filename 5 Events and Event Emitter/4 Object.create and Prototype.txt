@@ -1,0 +1,4 @@
+Object.create and Prototype:
+==============================
+
+	Goes up the prototype chain to fetch properties and methods.

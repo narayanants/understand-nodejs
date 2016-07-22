@@ -1,0 +1,11 @@
+Outputting HTML and Templates:
+------------------------------
+
+Template:
+--------
+
+	Text designed to be the basis for final text or content after that text is processed.
+
+	There's usually some Template language, so the template system knows to replace placeholders with real values.
+
+		

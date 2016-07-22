@@ -1,0 +1,9 @@
+call, apply and bind:
+=====================
+
+All functions in JS have access to 
+
+
+	call() - lets you control what this variable points to and params separated by commas
+	apply() - invokes the function with this and an array of parameters.
+	bind() - creates a copy of the function you are calling it on and what ever methods you pass it on.

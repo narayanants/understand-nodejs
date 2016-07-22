@@ -1,0 +1,5 @@
+C++ core:
+=========
+
+Download source code and inspect each folder and what it contains and does.
+

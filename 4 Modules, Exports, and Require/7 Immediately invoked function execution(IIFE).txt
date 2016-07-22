@@ -1,0 +1,15 @@
+Immediately invoked function Expressions(IIFE):
+================================================
+
+IIFE:
+=====
+
+	Modules code that is protected that doesn't impact other code
+
+Scope:
+=======
+
+	where in code you have access to a particulat variable or function.
+
+
+	
