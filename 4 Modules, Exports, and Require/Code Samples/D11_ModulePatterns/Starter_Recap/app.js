@@ -1,28 +1,36 @@
-//pattern 1
-var version1 = require('./v1');
-version1();
+// Module function pattern
+var version1 = require('./version1');
+version1.greet();
 
-//pattern 2
+//Module property pattern
 
-var version2 = require('./v2').greet;
+var version2 = require('./version2').greet;
 version2();
 
-//pattern 3
-
-var version3 = require('./v3');
+// Function constructor pattern
+var version3 = require('./version3');
 version3.greet();
-version3.greeting = "welcome message changed in version 3!";
+version3.greeting = 'Hello world changed!';
 
-var version3b = require('./v3');
-version3b.greet();
+var v3 = require('./version3');
+v3.greet();
 
-//pattern 4
-
-var Version4 = require('./v4');
-var v4 = new Version4();
+//Creat
+var version4 = require('./version4');
+var v4 = new version4();
 v4.greet();
 
-//pattern 5
 
-var version5 = require('./v5').verzion;
+//Pattern 5
+var version5 = require('./version5').greet;
 version5();
+
+
+
+
+
+
+
+
+
+
