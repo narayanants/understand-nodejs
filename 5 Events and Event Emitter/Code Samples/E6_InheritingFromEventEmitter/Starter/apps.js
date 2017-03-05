@@ -7,12 +7,15 @@ function Greetr(){
 
 util.inherits(Greetr,EventEmitter);
 
-Greetr.prototype.greet = function(data){
+Greetr.prototype.greet = function(){
     console.log(this.greeting + ' ' + data);
     this.emit('greet',data);
 }
 
 var grtr = new Greetr();
 grtr.on('greet',function(data){
-    console.log('Hello! '+ data);
+    console.log('Hello' + data);
 });
+
+grtr.greet('Narayanan');
+
