@@ -5,11 +5,11 @@ var emtr = new eventEmitter();
 
 emtr.on(eventConfig.GREET,function(){
     console.log('Greeted!');
-});
+})
 
 emtr.on(eventConfig.GREET,function(){
-	console.log('someone greeted!');
+    console.log('Greeted 2nd time');
 });
 
-console.log('Hello');
-emtr.emit(eventConfig.GREET);
+console.log('GREETED!');
+emtr.emit();
