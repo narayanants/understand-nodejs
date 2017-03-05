@@ -4,7 +4,6 @@ var eventEmitter = require('events');
 
 var eventConfig = require('./config');
 
-
 var emtr = new eventEmitter();
 
 emtr.on(eventConfig.GREET,function(){
@@ -17,6 +16,11 @@ emtr.on(eventConfig.GREET,function(){
 
 console.log('Heloooo!');
 emtr.emit(eventConfig.GREET);
+
+
+
+
+
 
 
 
